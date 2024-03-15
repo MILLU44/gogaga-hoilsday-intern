@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogaga Holidays</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+        /* General styles */
+        .bg-container {
+            background-image: url("https://res.cloudinary.com/dmzajslfq/image/upload/v1710431570/csebswi8ylj67fq1xqot.jpg");
+            background-size: cover;
+            padding: 24px;
+        }
+
+        .heading {
+            color: white;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .card-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 15px;
+        }
+
+        .card-heading {
+            color: #0f0e46;
+            font-family: "Roboto";
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .card-description {
+            color: #6c6b70;
+            font-family: "Roboto";
+            font-size: 18px;
+        }
+
+        .card-image {
+            width: 80px;
+            height: 100px;
+        }
+
+        .card-text-container {
+            margin-right: 15px;
+        }
+
+        /* Navigation styles */
+        .nav-container {
+            background: white;
+            background-size: cover;
+            border-radius: 22px;
+            text-align: center;
+        }
+
+        nav {
+            background: white;
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border-radius: 22px;
+        }
+
+        nav > a {
+            color: black;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 22px;
+        }
+
+        nav > a:hover {
+            transition: 0.25s;
+            background-color: rgb(56, 130, 209);
+            color: white;
+        }
+
+        /* Package styles */
+        .package {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .package img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .package-details {
+            flex-grow: 1;
+        }
+
+        .package-details h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .package-details .description {
+            margin-bottom: 10px;
+        }
+
+        .package-details .price {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .bg-container {
+                padding: 12px;
+            }
+
+            .heading {
+                font-size: 24px;
+            }
+
+            nav {
+                width: 90vw;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .bg-container {
+                padding: 8px;
+            }
+
+            .heading {
+                font-size: 20px;
+            }
+
+            .card-heading {
+                font-size: 20px;
+            }
+
+            .card-description {
+                font-size: 16px;
+            }
+
+            nav {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-container">
+        <h1 class="heading text-center">Welcome to Gogaga Holidays</h1>
+        <div class="row justify-content-center">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index1.html">Flight Booking</a>
+                <a href="index2.html">Hotel Booking</a>
+                <a href="index3.html">Package Collections</a>
+            </nav>
+        </div>
+    </div>
+    <div class="bg-container">
+        <div class="card-container pt-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="card-heading">Welcome to Gogaga Holidays</h1>
+                    <p class="card-description">At Gogaga Holidays, we believe in transforming dreams into unforgettable
+                        experiences. Our website is your gateway to a world of travel possibilities, where every journey
+                        is crafted with care and tailored to your desires. Explore our extensive range of holiday packages,
+                        each meticulously curated to offer you the ultimate escape. Whether you crave the tranquility of a
+                        beach retreat, the thrill of an adventure expedition, or the cultural richness of a historical tour,
+                        we have something for everyone. With our intuitive flight booking feature, planning your travel is a
+                        breeze. Simply enter your departure and destination details, and let us handle the rest. Our
+                        comprehensive search engine ensures you find the best deals, so you can soar to new heights without
+                        breaking the bank. Indulge in unparalleled comfort with our hotel booking service. From cozy boutique
+                        hotels to lavish resorts, we have accommodations to suit every taste and budget. With seamless
+                        booking options and detailed listings, finding your home away from home has never been easier.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="card-heading">Holiday Packages</h1>
+                    <div class="package">
+                        <img src="https://res.cloudinary.com/dmzajslfq/image/upload/v1710475688/r0qcy9yuji29tfy4ymuv.jpg"
+                            alt="Package 1">
+                        <div class="package-details">
+                            <h3>Beach Getaway</h3>
+                            <p class="description">Relax on the pristine beaches of Hawaii with this luxurious package.</p>
+                            <p class="price">$2000</p>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="https://res.cloudinary.com/dmzajslfq/image/upload/v1710475726/hidqdhivnwspgouv83ld.jpg"
+                            alt="Package 2">
+                        <div class="package-details">
+                            <h3>Mountain Adventure</h3>
+                            <p class="description">Embark on an exhilarating trekking expedition in the Swiss Alps.</p>
+                            <p class="price">$2500</p>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-container {
+            background-image: url("https://res.cloudinary.com/dmzajslfq/image/upload/v1710431570/csebswi8ylj67fq1xqot.jpg");
+            background-size: cover;
+            padding: 24px;
+            height: 100vh;
+        }
+        
+        .heading {
+            color: white;
+            font-family: "Roboto";
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .nav-container{
+            background: white;
+            background-size: cover;
+            border-radius: 22px;
+            text-align: center;
+        }
+        nav {
+            background: white;
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border-radius: 22px;
+        }
+        nav > a {
+            color: black;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 22px;
+        }
+        nav > a:hover{
+            transition: 0.25s;
+            background-color: rgb(56,130,209);
+            color: white;
+        }
+        
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: calc(50% - 5px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container">
+        <h1 class="heading">Welcome to Gogaga Holidays</h1>
+        <div class="nav-container d-flex justify-content-center pb-2">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="index1.html">Flight Booking</a>
+            <a href="index2.html">Hotel Booking</a>
+            <a href="index3.html">Package Collections</a>
+          </nav>
+        </div>
+        <div class="container">
+            <h1>Hotel Booking</h1>
+            <form>
+                <input type="text" placeholder="Destination" required>
+                <input type="date" placeholder="Check-in Date" required>
+                <input type="date" placeholder="Check-out Date" required>
+                <select>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                </select>
+                <input type="submit" value="Search Hotels">
+            </form>
+            <div id="hotel-results"></div>
+        </div>
+    </div>
+
+</body>
+</html>
